@@ -1,0 +1,40 @@
+.rodape{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 25px 25px;
+	background-color: rgb(33, 65, 105);
+	color: #FFFFFF;
+}
+
+.quebrar-linha-flex{
+	flex-basis: 100%;
+	height: 0;
+}
+
+.redes i{
+	font-size: 30px;
+	color: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.direitos{
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+.direitos hr{
+	height: 3px;
+	border: none;
+	background-color: #FFFFFF;
+}
+
+.direitos p{
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}

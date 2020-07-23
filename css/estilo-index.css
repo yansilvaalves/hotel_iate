@@ -1,0 +1,292 @@
+
+.espacamento{
+	margin-bottom: 20px;
+}
+
+.quebrar-linha-flex{
+	flex-basis: 100%;
+	height: 0;
+}
+
+/* HERO */
+
+.hero{
+	background-image: url(../img/vista-01.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	color: #4040ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: #000000;
+}
+
+.hero h1{
+	font-size: 3rem;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+.hero .btn{
+	background-color: #fff;
+	border-radius: 8px;
+	color: #4040ff;
+	padding: 20px 50px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+@media (max-width: 700px){
+
+	.hero h1{
+		font-size: 2.5rem;
+		margin-top: 30%;
+		background-color: #fff;
+	}
+
+	.hero h3{
+		font-size: 1.5rem;
+		background-color: #fff;
+	}
+
+}
+
+/* CONHEÇA O HOTEL */
+
+.conheca-o-hotel{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 25px 25px;
+}
+
+.conheca-o-hotel .informacoes{
+	display: flex;
+	flex-direction: column;
+}
+
+.conheca-o-hotel h1{
+	font-size: 2rem;
+	color: #000000;
+}
+
+.conheca-o-hotel hr,
+.quarto hr{
+	width: 280px;
+	height: 3px;
+	background-color: #FFA500;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.informacoes p{
+	width: 260px;
+	text-align: justify;
+}
+
+.informacoes .btn-info,
+.quarto a{
+	margin-top: 20px;
+	border: 3px solid #FFA500;
+	padding: 10px 8px;
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.conheca-o-hotel .comodidades{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.conheca-o-hotel ul li{
+	flex-basis: 30%;
+}
+
+.conheca-o-hotel img{
+	height: 380px;
+	margin-bottom: 20px;
+}
+
+.conheca-o-hotel .comodidades b, p{
+	width: 260px;
+	text-align: justify;
+	margin-left: 12px;
+}
+
+@media (max-width: 1200px){
+
+	.conheca-o-hotel{
+		flex-direction: column;
+	}
+
+	.conheca-o-hotel .informacoes{
+		align-items: center;
+	}
+
+	.conheca-o-hotel .informacoes p{
+		margin-bottom: 15px;
+	}
+
+	.conheca-o-hotel .comodidades{
+		flex-wrap: wrap;
+	}
+
+	.conheca-o-hotel .comodidades b, p{
+		margin-bottom: 20px;
+	}
+
+}
+
+/* GALERIA */
+
+.galeria{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.imagens{
+	width: 20%;
+	height: 200px;
+	transition: padding-bottom 0.3s 0.1s,
+	opacity 0.3s 0.1s;
+}
+
+.imagens:hover{
+	padding-bottom: 20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+@media (max-width: 1200px){
+
+	.imagens{
+		width: 33%;
+	}
+
+}
+
+@media (max-width: 700px){
+
+	.imagens{
+		width: 50%;
+	}
+
+}
+
+/* QUARTO */
+
+.quarto{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.informacoes-quarto{
+	flex-basis: 35%;
+	align-content: center;
+	align-items: center;
+	margin-left: 30px;
+}
+
+.informacoes-quarto h1{
+	font-size: 2rem;
+	padding: 10px 10px;
+}
+
+.informacoes-quarto p{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.quarto img{
+	flex-grow: 1;
+}
+
+@media (max-width: 1200px){
+
+	.quarto{
+		flex-direction: column;
+	}
+
+	.quarto .informacoes-quarto{
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+}
+
+.reserva{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	background-color: rgb(33, 65, 105);
+	color: #FFFFFF;
+}
+
+.reserva h1{
+	font-size: 2.5rem;
+	margin-top: 2%;
+}
+
+.reserva p{
+	margin-top: 2%;
+	width: 50%;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.reserva a{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: 3px solid #FFA500;
+	padding: 10px 8px;
+	color: #FFFFFF;
+}
+
+@media (max-width: 700px){
+
+	.reserva h1{
+		font-size: 1.5rem;
+	}
+
+	.reserva p{
+		width: 70%;
+	}
+
+}
+
+.parallax{
+	background-image: url(../img/vista-02.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 75vh;
+	width: 100%;
+}
+
+@media (max-width: 1200px){
+
+	.parallax{
+		min-height: 50vh;
+	}
+
+}
+
+@media (max-width: 700px){
+
+	.parallax{
+		min-height: 30vh;
+		background-attachment: scroll;
+	}
+
+}
